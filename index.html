@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Harlyzer">
+<style>
+/* latin */
+@font-face {
+  font-family: 'Wire One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Wire One'), local('WireOne'), url(http://fonts.gstatic.com/s/wireone/v7/rLTvRwYavTGtXnsB7H7e_HYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+</style>
+	<title>Harlyzer-beta</title>
+
+	<!-- Bootstrap itself -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/amal.css">
+
+	<!-- Fonts -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body class="theme-invert">
+
+<nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<!-- Main (Home) section -->
+<section class="section" id="head">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+
+				<h1 class="title">Harlyzer</h1>
+
+				<h3 class="tagline">
+					You can compare two .har files here to find the non-matching objects.
+				</h3>
+
+				<p>  <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Get started</button></p>
+
+
+<!-- Amal start -->
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Upload HAR files</h4>
+        </div>
+        <div class="modal-body">
+					<form enctype="multipart/form-data" action="analyze_config.py" method="post">
+
+									<label for="har1">Upload Non-alerted .HAR file</label>
+
+									  <input type="file" name="file1" >
+
+									<label for="har2">Upload Alerted .HAR file for comparison</label>
+
+									  <input type="file" name="file2">
+
+
+							<button type="submit" class="btn btn-default">Upload and verify</button>
+
+					</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- Amal end -->
+
+
+
+
+
+
+
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+
+	</div>
+</section>
+
+<!-- Second (About) section -->
+<section class="section" id="about">
+	<div class="container">
+
+		<h2 class="text-center title">About me</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">
+
+			</div>
+			<div class="col-sm-4">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="section" id="themes">
+	<div class="container">
+
+
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/screenshots/sshot1.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+					<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- Load js libs only when the page is loaded. -->
+
+<script src="assets/js/modernizr.custom.72241.js"></script>
+<!-- Custom template scripts -->
+<script src="assets/js/magister.js"></script>
+</body>
+</html>
